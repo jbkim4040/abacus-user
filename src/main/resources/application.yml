@@ -1,0 +1,17 @@
+server:
+  port: 8020
+
+spring:
+  application:
+    name: abacus-user-svc
+  security:
+    user:
+      name: admin
+      password: admin
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone : http://admin:admin@localhost:8761/eureka/
